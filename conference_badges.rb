@@ -24,6 +24,6 @@ end
 
 
 def printer(attendees)
-  puts batch_badge_creator(attendees).transpose
-  puts assign_rooms(attendees).transpose
+  puts batch_badge_creator(attendees).split("\n")
+  puts assign_rooms(attendees).split("\n")
 end
