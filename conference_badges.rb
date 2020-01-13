@@ -16,7 +16,7 @@ def assign_rooms(speakers)
   long_array = []
   names_numbers = {}
   speakers.each do |name|
-    names_numbers[:name] = speakers.index(name)
+    names_numbers[:name] = speakers.index(name) + 1
     long_array.push("Hello, #{name}! You'll be assigned to room #{names_numbers[:name]}!")
   end
   return long_array
