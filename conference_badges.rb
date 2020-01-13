@@ -24,5 +24,6 @@ end
 
 
 def printer
-  puts names_numbers
+  puts batch_badge_creator
+  puts assign_rooms
 end
