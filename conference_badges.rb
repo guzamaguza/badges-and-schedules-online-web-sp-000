@@ -13,10 +13,11 @@ def batch_badge_creator(array)
 end
 
 def assign_rooms(speakers)
+  long_array = []
   names_numbers = {}
   speakers.each do |name|
-    names_numbers.merge!({:name => speakers.index(name)})
-    long_array.push("Hello, #{name}! You'll be assigned to room #{speakers.index(name)}!")
+    names_numbers[:name] = speakers.index(name)
+    long_array.push("Hello, #{name}! You'll be assigned to room #{names_numbers[:name]}!")
   end
   return names_numbers
 end
