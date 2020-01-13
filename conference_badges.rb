@@ -17,13 +17,13 @@ def assign_rooms(speakers)
   names_numbers = {}
   speakers.each do |name|
     names_numbers[:name] = speakers.index(name) + 1
-    long_array.push("Hello, #{name}! You'll be assigned to room #{names_numbers[:name]}!\n")
+    long_array.push("Hello, #{name}! You'll be assigned to room #{names_numbers[:name]}!")
   end
   return long_array
 end
 
 
 def printer(attendees)
-  puts batch_badge_creator(attendees)
-  puts assign_rooms(attendees)
+  puts batch_badge_creator(attendees).transpose
+  puts assign_rooms(attendees).transpose
 end
