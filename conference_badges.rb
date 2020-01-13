@@ -19,7 +19,7 @@ def assign_rooms(speakers)
     names_numbers[:name] = speakers.index(name)
     long_array.push("Hello, #{name}! You'll be assigned to room #{names_numbers[:name]}!")
   end
-  return long_array 
+  return long_array
 end
 
 
