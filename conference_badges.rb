@@ -24,5 +24,5 @@ end
 
 
 def printer
-  puts names_numbers 
+  puts names_numbers
 end
